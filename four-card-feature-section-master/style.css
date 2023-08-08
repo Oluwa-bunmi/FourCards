@@ -29,46 +29,71 @@ p{
     font-size: large;
 }
 .supervisor{
+    position: relative;
     width: 400px;
     height: 300px;
     padding: 2rem;
-    border-top: 4px solid black;
+    border-top: 4px solid hsl(180, 62%, 55%);
     margin-left: 4rem;
     background-color: white;
+    top: 30%;
+    
 }
-.supervisor p{
-    padding-bottom: 6rem;
+.supervisor img{
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
 }
 .builder{
+    position: relative;
     width: 400px;
     height: 300px;
     padding: 2rem;
-    border-top: 4px solid black;
+    border-top: 4px solid hsl(0, 78%, 62%);
     margin-left: 4rem;
     background-color: white;
 }
-.builder p{
-    padding-bottom: 6rem;
+.builder img{
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
 }
 .karma{
+    position: relative;
     width: 400px;
     height: 300px;
     padding: 2rem;
-    border-top: 4px solid black;
+    border-top: 4px solid hsl(34, 97%, 64%);
     margin-left: 4rem;
     background-color: white;
 }
-.karma p{
-    padding-bottom: 6rem;
+.karma img{
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
 }
 .calculator{
+    position: relative;
     width: 400px;
     height: 300px;
     padding: 2rem;
-    border-top: 4px solid black;
-    margin-left: 4rem;
+    border-top: 4px solid hsl(212, 86%, 64%);
+    margin-right: 4rem;
     background-color: white;
+    top:30% ;
 }
-.calculator p{
-    padding-bottom: 6rem;
+.calculator img{
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+}
+.fourGrids{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.twoGrids{
+    position: relative;
+    top: 10%;
+    bottom: 10%;
+    right: 5%;
 }
