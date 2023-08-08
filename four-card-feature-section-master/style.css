@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: whitesmoke;
+    background-color: hsl(0, 0%, 98%);
 }
 .headings{
     text-align: center;
@@ -14,13 +14,61 @@ body{
     font-family:'Poppins', sans-serif;
     font-weight: 200;
     font-size: 30px;
+    color: hsl(229, 6%, 66%);
+    font-size: xx-large;
 }
 .tech{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 30px;
+    font-size: xx-large;
+    padding-top: 1rem;
 }
 p{
     color: hsl(229, 6%, 66%);
     font-size: large;
+}
+.supervisor{
+    width: 400px;
+    height: 300px;
+    padding: 2rem;
+    border-top: 4px solid black;
+    margin-left: 4rem;
+    background-color: white;
+}
+.supervisor p{
+    padding-bottom: 6rem;
+}
+.builder{
+    width: 400px;
+    height: 300px;
+    padding: 2rem;
+    border-top: 4px solid black;
+    margin-left: 4rem;
+    background-color: white;
+}
+.builder p{
+    padding-bottom: 6rem;
+}
+.karma{
+    width: 400px;
+    height: 300px;
+    padding: 2rem;
+    border-top: 4px solid black;
+    margin-left: 4rem;
+    background-color: white;
+}
+.karma p{
+    padding-bottom: 6rem;
+}
+.calculator{
+    width: 400px;
+    height: 300px;
+    padding: 2rem;
+    border-top: 4px solid black;
+    margin-left: 4rem;
+    background-color: white;
+}
+.calculator p{
+    padding-bottom: 6rem;
 }
