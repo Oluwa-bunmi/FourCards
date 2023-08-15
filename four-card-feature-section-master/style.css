@@ -1,99 +1,74 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    background-color: hsl(0, 0%, 98%);
+body {
+  background-color: hsl(0, 0%, 98%);
 }
-.headings{
-    text-align: center;
-    padding: 5rem;
+.headings {
+  text-align: center;
+  padding: 5rem;
 }
-.reliable{
-    font-family:'Poppins', sans-serif;
-    font-weight: 200;
-    font-size: 30px;
-    color: hsl(229, 6%, 66%);
-    font-size: xx-large;
+.reliable {
+  font-size: 30px;
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
 }
-.tech{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-    font-size: xx-large;
-    padding-top: 1rem;
+.tech {
+  font-weight: 600;
+  font-size: xx-large;
+  padding-top: 1rem;
 }
-p{
-    color: hsl(229, 6%, 66%);
-    font-size: large;
+p {
+  color: hsl(229, 6%, 66%);
+  font-size: 15px;
 }
-.supervisor{
-    position: relative;
-    width: 400px;
-    height: 300px;
-    padding: 2rem;
-    border-top: 4px solid hsl(180, 62%, 55%);
-    margin-left: 4rem;
-    background-color: white;
-    top: 30%;
-    
+.container {
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+
 }
-.supervisor img{
-    position: absolute;
-    bottom: 2rem;
-    right: 0;
+.container div {
+  display: flex;
+  justify-content: end;
+  margin-top: 3rem;
 }
-.builder{
-    position: relative;
-    width: 400px;
-    height: 300px;
-    padding: 2rem;
-    border-top: 4px solid hsl(0, 78%, 62%);
-    margin-left: 4rem;
-    background-color: white;
+.supervisor {
+  border-top: 4px solid hsl(180, 62%, 55%);
 }
-.builder img{
-    position: absolute;
-    bottom: 2rem;
-    right: 0;
+.builder {
+  border-top: 4px solid hsl(0, 78%, 62%);
 }
-.karma{
-    position: relative;
-    width: 400px;
-    height: 300px;
-    padding: 2rem;
-    border-top: 4px solid hsl(34, 97%, 64%);
-    margin-left: 4rem;
-    background-color: white;
+.karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
 }
-.karma img{
-    position: absolute;
-    bottom: 2rem;
-    right: 0;
+.calculator {
+  border-top: 4px solid hsl(212, 86%, 64%);
 }
-.calculator{
-    position: relative;
-    width: 400px;
-    height: 300px;
-    padding: 2rem;
-    border-top: 4px solid hsl(212, 86%, 64%);
-    margin-right: 4rem;
-    background-color: white;
-    top:30% ;
+.fourGrids {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2rem;
+  padding: 0 4rem;
 }
-.calculator img{
-    position: absolute;
-    bottom: 2rem;
-    right: 0;
+.twoGrids {
+  display: grid;
+  gap: 2rem;
 }
-.fourGrids{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-.twoGrids{
-    position: relative;
-    top: 10%;
-    bottom: 10%;
-    right: 5%;
-}
+
+/* CORRECTIONS
+1) Excessive repetitions: karma, builder, calculator and supervisor are different class names with the same css properties
+   The solution to avoid the excessive repetition is to give the same class name to all the divs. Hence the reason for the container class I added
+2) There's no need to give each container height and width, padding alone is enough to create space.
+3) All paragraphs now have font size of 15px as instructed in the style guide
+4) We are to use Poppins family for the whole design hence the reason why i put it in the universal selector
+5) "Justify content end" is enough to put the image at the right position. But remember,
+justify content cannot work without display flex that's the reason for the code on line 34-38
+Position absolute affects responsiveness if one isn't careful with the use.
+6) reliable has two font sizes, I got rid of one.
+7) I got a box shadow from chatgpt. We can manage it since we weren't given the exact value
+*/
